@@ -1,0 +1,30 @@
+name: Auto Update Subscription
+
+on:
+  # 允许手动在网页端点击按钮触发更新
+  workflow_dispatch:
+  # 设置定时触发：每周一的 UTC 时间 0点（对应北京时间周一早上 8 点）自动运行一次
+  schedule:
+    - cron: '0 0 * * 1'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 检出当前仓库代码
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. 使用 curl 抓取订阅源内容并覆盖写入 sub.txt
+      - name: Fetch new subscription
+        run: |
+          curl -L "https://1009.xianniunai.ccwu.cc/5f40f6f1-b94c-4930-91c8-5a39631ee1e5/sub" -o sub.txt
+
+      # 3. 自动提交并推送到 GitHub 仓库
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.io'
+          git add sub.txt
+          # 如果内容有变化才提交，避免无意义的空提交
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update sub.txt: $(date '+%Y-%m-%d %H:%M:%S')" && git push)
