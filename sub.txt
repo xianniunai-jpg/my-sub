@@ -1,9 +1,9 @@
-# CFNext 订阅 v2.6.0 · 机房 AMS(荷兰) · 访客 NL(荷兰) · 节点 10 个
+# CFNext 订阅 v2.6.0 · 机房 AMS(荷兰) · 访客 CN · 节点 10 个
 test-url: 'http://www.gstatic.com/generate_204'
 proxies:
-  - name: 优选IP-01
+  - name: 优选5
     type: vless
-    server: 104.24.238.162
+    server: 104.17.137.129
     port: 443
     uuid: 5f40f6f1-b94c-4930-91c8-5a39631ee1e5
     network: ws
@@ -17,9 +17,9 @@ proxies:
       path: "/5f40f6f1-b94c-4930-91c8-5a39631ee1e5?ed=2048"
       headers:
         Host: 1009.xianniunai.ccwu.cc
-  - name: 优选IP-02
+  - name: 优选8
     type: vless
-    server: 104.20.176.174
+    server: 104.16.159.122
     port: 443
     uuid: 5f40f6f1-b94c-4930-91c8-5a39631ee1e5
     network: ws
@@ -33,9 +33,9 @@ proxies:
       path: "/5f40f6f1-b94c-4930-91c8-5a39631ee1e5?ed=2048"
       headers:
         Host: 1009.xianniunai.ccwu.cc
-  - name: 优选IP-03
+  - name: 优选7
     type: vless
-    server: 104.27.149.40
+    server: 104.17.174.222
     port: 443
     uuid: 5f40f6f1-b94c-4930-91c8-5a39631ee1e5
     network: ws
@@ -49,9 +49,9 @@ proxies:
       path: "/5f40f6f1-b94c-4930-91c8-5a39631ee1e5?ed=2048"
       headers:
         Host: 1009.xianniunai.ccwu.cc
-  - name: 优选IP-04
+  - name: 优选1
     type: vless
-    server: 188.114.103.111
+    server: 104.19.152.182
     port: 443
     uuid: 5f40f6f1-b94c-4930-91c8-5a39631ee1e5
     network: ws
@@ -65,9 +65,9 @@ proxies:
       path: "/5f40f6f1-b94c-4930-91c8-5a39631ee1e5?ed=2048"
       headers:
         Host: 1009.xianniunai.ccwu.cc
-  - name: 优选IP-05
+  - name: 优选4
     type: vless
-    server: 104.25.6.164
+    server: 104.17.218.99
     port: 443
     uuid: 5f40f6f1-b94c-4930-91c8-5a39631ee1e5
     network: ws
@@ -81,9 +81,9 @@ proxies:
       path: "/5f40f6f1-b94c-4930-91c8-5a39631ee1e5?ed=2048"
       headers:
         Host: 1009.xianniunai.ccwu.cc
-  - name: 优选IP-06
+  - name: 优选10
     type: vless
-    server: 188.114.103.89
+    server: 162.159.132.231
     port: 443
     uuid: 5f40f6f1-b94c-4930-91c8-5a39631ee1e5
     network: ws
@@ -97,9 +97,9 @@ proxies:
       path: "/5f40f6f1-b94c-4930-91c8-5a39631ee1e5?ed=2048"
       headers:
         Host: 1009.xianniunai.ccwu.cc
-  - name: 优选IP-07
+  - name: 优选9
     type: vless
-    server: 162.159.105.6
+    server: 104.17.161.70
     port: 443
     uuid: 5f40f6f1-b94c-4930-91c8-5a39631ee1e5
     network: ws
@@ -113,9 +113,9 @@ proxies:
       path: "/5f40f6f1-b94c-4930-91c8-5a39631ee1e5?ed=2048"
       headers:
         Host: 1009.xianniunai.ccwu.cc
-  - name: 优选IP-08
+  - name: 优选6
     type: vless
-    server: 162.159.130.203
+    server: 104.17.154.59
     port: 443
     uuid: 5f40f6f1-b94c-4930-91c8-5a39631ee1e5
     network: ws
@@ -129,9 +129,9 @@ proxies:
       path: "/5f40f6f1-b94c-4930-91c8-5a39631ee1e5?ed=2048"
       headers:
         Host: 1009.xianniunai.ccwu.cc
-  - name: 优选IP-09
+  - name: 优选2
     type: vless
-    server: 172.66.181.15
+    server: 104.19.155.11
     port: 443
     uuid: 5f40f6f1-b94c-4930-91c8-5a39631ee1e5
     network: ws
@@ -145,9 +145,9 @@ proxies:
       path: "/5f40f6f1-b94c-4930-91c8-5a39631ee1e5?ed=2048"
       headers:
         Host: 1009.xianniunai.ccwu.cc
-  - name: 优选IP-10
+  - name: 优选3
     type: vless
-    server: 172.65.208.124
+    server: 104.16.150.194
     port: 443
     uuid: 5f40f6f1-b94c-4930-91c8-5a39631ee1e5
     network: ws
